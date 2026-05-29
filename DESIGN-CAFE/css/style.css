@@ -19,6 +19,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 99999;
 }
 
 .header_nav ul{
@@ -36,11 +37,10 @@ body{
 
 @media screen and (max-width: 768px){
     .logo img{
-        width: 62.5%;
-        height: 22px;
+        width: 244px;
     }
 }    
-.circle{
+/* .circle{
     width: 126px;
     height: 10px;
     display: flex;
@@ -64,9 +64,10 @@ body{
     .circle{
         margin: 40px auto 92px;
     }
-}    
+}     */
 .happy{
     margin: auto;
+    margin-top: 72px;
     margin-bottom: 144px;
     text-align: center;
     color: #4f270b
@@ -248,6 +249,21 @@ body{
     margin-top: 32px;
 }
 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+}
+.modal-imag{
+    max-width: 60%;
+    max-height: 70%;
+}
+
 @media screen and (max-width: 768px){
     .gallery{
         margin-top: 80px;
@@ -345,19 +361,20 @@ body{
 }
 .footer {
   background-color: #ffffff;
-  padding: 80px 0 60px 0;
-  margin: auto;
 }
 .footer .footer__inner{
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
+  padding: 80px 0 60px 0;
 }
 .footer .footer-tytle{
   font-family: "Diplomata SC", serif;
   font-size: 28px;
   color: #4f270b;
   font-weight: normal;
+  margin: 0 auto;
+  
 }
 .fotter2 {
   width: 580px;
@@ -387,7 +404,7 @@ body{
 }
 .copyright {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
 }
 @media screen and (max-width: 768px){
     .footer{padding: 80px 20px;
@@ -400,6 +417,7 @@ body{
 }
     .footer .footer-tytle{
         font-size: 24px;
+        margin: auto;
     }
     .fotter2 {
         margin-top: 39px;
@@ -504,3 +522,12 @@ body{
 }
 }
 
+.slick-dots li button:before{
+    font-size: 10px;
+}
+
+.remodal img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
